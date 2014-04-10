@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Dox Hotel: Meld je gratis aan</title>
+
+<script type="text/javascript">
+	if(top != self) top.location = self.location;
+	var andSoItBegins = (new Date()).getTime();
+</script>
+
+<link rel="shortcut icon" href="{url}/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/common.css" type="text/css" />
+
+<script src="{url}/web-gallery/static/js/libs2.js" type="text/javascript"></script>
+<script src="{url}/web-gallery/static/js/visual.js" type="text/javascript"></script>
+<script src="{url}/web-gallery/static/js/libs.js" type="text/javascript"></script>
+<script src="{url}/web-gallery/static/js/common.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+document.doxLoggedIn = false;
+var doxName = null;
+var ad_keywords = "";
+var doxReqPath = "";
+var doxStaticFilePath = "{url}/web-gallery";
+var doxImagerUrl = "/dox-imaging/";
+var doxPartner = "";
+window.name = "doxMain";
+if (typeof DoxClient != "undefined") {
+    DoxClient.windowName = "client";
+    DoxClient.maximizeWindow = true;
+}
+</script>
+
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/quickregister.css" type="text/css" />
+
+<meta name="description" content="Maak vrienden, doe mee en val op!" />
+<meta name="keywords" content="dox hotel, virtueel, wereld, sociaal netwerk, gratis, community, avatar, chat, online, tiener, roleplaying, doe mee, sociaal, groepen, forums, veilig, speel, games, online, vrienden, tieners, zeldzaams, zeldzame meubi, verzamelen, maak, verzamel, kom in contact, meubi, meubeks, huisdieren, kamer inrichten, delen, uitdrukking, badges, hangout, muziek, beroemdheid, VIP-visits, celebs, mmo, mmorpgs, massive multiplayer" />
+
+<!--[if IE 8]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie8.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie6.css" type="text/css" />
+<script src="{url}/web-gallery/static/js/pngfix.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+
+<style type="text/css">
+body { behavior: url(/js/csshover.htc); }
+</style>
+<![endif]-->
+<meta name="build" content="63-BUILD848 - 24.10.2011 11:04 - nl" />
+</head>
+
+<body id="client" class="background-accountdetails-male">
+<div id="overlay"></div>
+<img src="{url}/web-gallery/v2/images/page_loader.gif" style="position:absolute; margin: -1500px;" />
+
+<div id="stepnumbers">
+
+    <div class="stepdone">Geboortedatum &amp; geslacht</div>
+
+    <div class="step2focus">Gegevens</div>
+
+    <div class="step3">Veiligheidscheck</div>
+
+    <div class="stepdox"></div>
+
+</div>
+
+
+
+<div id="main-container">
+
+{bean_error}
+
+   	<div id="error-placeholder"></div>
+
+
+    <h2>Jouw {hotel_name}gegevens</h2> 
+
+
+    <form method="post" action="/quickregister/email_password_submit" id="quickregister-form">
+
+      <div id="inner-container">
+        <div class="inner-content bottom-border">
+            <div class="field">                 <label for="email-address">{hotel_name}naam</label>                 <input type="text" id="email-address" name="bean.username" value="" class="" />             </div>             <div class="help">Jouw <b>unieke naam</b> in {hotel_name} Hotel.</div>             <div class="field">                 <label for="email-address">E-mail</label>                 <input type="text" id="email-address" name="bean.email" value="" class="" />             </div>             <div class="help">Je hebt dit <b>e-mailadres</b> nodig om later je </b>wachtwoord</b> te kunnen opvragen. Gebruik dus een echt adres.</div>              <div id="password-field" class="field">                 <label for="register-password">Wachtwoord</label>                 <input type="password" name="bean.password" id="register-password" maxlength="32" value="" class="" />             </div>             <div class="help">Je wachtwoord moet meer dan <b>6 tekens</b> lang zijn en <b>letters en cijfers</b> bevatten.</div>
+            <div id="password-field" class="field">                 <label for="register-password2">Opnieuw wachtwoord</label>                 <input type="password" name="bean.retypedPassword" id="register-password" maxlength="32" value="" class="" />             </div>             <div class="help">...voor de zekerheid.</div>         </div>
+
+        <div class="inner-content top-margin">
+
+			<div class="field-content checkbox ">
+
+			  <label>
+
+			    <input type="checkbox" name="bean.termsOfServiceSelection" id="terms" value="true" class="checkbox-field" />
+
+			    Ik begrijp en ga akkoord met de <a href="{url}/papers/termsAndConditions" target="_blank" onclick="window.open('{url}/papers/termsAndConditions'); return false;">Algemene voorwaarden</a>
+
+			  </label>
+
+			</div>            
+
+
+
+			<div class="field-content checkbox">
+
+			  <label>
+
+							    
+
+			</div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+
+
+
+
+    <div id="select">
+
+        <div class="button">
+
+            <a id="proceed-button" href="#" class="area">Verder</a>
+
+            <span class="close"></span>
+
+        </div>
+
+        <a href="/quickregister/start" id="back-link">Terug</a>
+
+   </div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    document.observe("dom:loaded", function() {
+
+        Event.observe($("back-link"), "click", function() {
+
+            Overlay.show(null,'Laden...');
+
+        });
+
+        Event.observe($("proceed-button"), "click", function() {
+
+            Overlay.show(null,'Laden...');            
+
+            $("quickregister-form").submit();
+
+        });
+
+            $("email-address").focus();
+
+    });
+
+</script>
+
+<script type="text/javascript">
+    HabboView.run();
+</script>
+
+</body>
+</html>

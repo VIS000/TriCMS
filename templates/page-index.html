@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title>{hotel_name} Hotel: Maak vrienden, doe mee en val op!</title>
+	
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script type="text/javascript"> 
+	var andSoItBegins = (new Date()).getTime();
+	</script>
+	
+	<link rel="shortcut icon" href="{url}/web-gallery/v2/favicon.ico" type="image/vnd.microsoft.icon" />
+<link type="text/css" href="{url}/web-gallery/static/styles/frontpage.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="{url}/web-gallery/static/js/libs2.js"></script>
+<script type="text/javascript" src="{url}/web-gallery/static/js/landing.js"></script>
+<style type="text/css">
+body {
+	 background-color: #000000;
+}
+
+#footer .footer-links   { color: #666666; }
+#footer .footer-links a { color: #ffffff; }
+#footer .copyright      { color: #666666; }
+
+#habbo-logo {
+	width: 160px;
+	height: 70px;
+	background: url("{url}/web-gallery/v2/images/habbo.png") no-repeat;
+	float: left;
+	margin-top: 30px;
+	display: inline;
+}
+</style>
+
+<script type="text/javascript"> 
+document.habboLoggedIn = false;
+var habboName = "";
+var habboId = "0";
+var habboReqPath = "{url}";
+var habboStaticFilePath = "{url}/web-gallery";
+var habboImagerUrl = "{url}/habbo-imaging/";
+var habboPartner = "";
+var habboDefaultClientPopupUrl = "{url}/client";
+window.name = "habboMain";
+if (typeof HabboClient != "undefined") {
+    HabboClient.windowName = "client";
+}
+</script>
+
+<meta name="description" content="Maak vrienden, doe mee en val op!" />
+<meta name="keywords" content="{hotel_name} Hotel, virtueel, wereld, sociaal netwerk, gratis, community, avatar, chat, online, tiener, roleplaying, doe mee, sociaal, groepen, forums, veilig, speel, games, online, vrienden, tieners, zeldzaams, zeldzame meubi, verzamelen, maak, verzamel, kom in contact, meubi, meubeks, huisdieren, kamer inrichten, delen, uitdrukking, badges, hangout, muziek, beroemdheid, HC-visits, celebs, mmo, mmorpgs, massive multiplayer" />
+
+<!--[if IE 8]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie8.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="{url}/web-gallery/static/styles/ie6.css" type="text/css" />
+<script src="{url}/web-gallery/static/js/pngfix.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+<style type="text/css">
+body { behavior: url({url}/web-gallery/js/csshover.htc); }
+</style>
+<![endif]-->
+
+<meta name="build" content="{hotel_name} Hotel: R63" />
+</head>
+<body id="frontpage">
+<div id="overlay"></div>
+
+
+<div id="site-header">
+<form id="loginformitem" name="loginformitem" action="{url}/account/submit" method="post">
+
+{login_error}
+
+<div style="clear: both;"></div>
+
+<div id="site-header-content">
+<div id="habbo-logo"></div>
+<div id="login-form">
+
+<div id="login-form-email">
+<label for="login-username" class="login-text">E-mail</label>
+<input tabindex="3" type="text" class="login-field" name="credentials_username" id="login-username" value="" maxlength="48"/>
+
+<div id="landing-remember-me-notification" class="bottom-bubble" style="display:none;">
+<div class="bottom-bubble-t"><div></div></div>
+<div class="bottom-bubble-c">
+Door dit te selecteren blijf je ingelogd in Habfly Hotel totdat je op 'Log uit' klikt.
+</div>
+<div class="bottom-bubble-b"><div></div></div>
+</div>
+</div>
+
+<div id="login-form-password">
+<label for="login-password" class="login-text">Wachtwoord</label>
+<input tabindex="4" type="password" class="login-field" name="credentials_password" id="login-password" maxlength="32"/>
+
+<div id="login-forgot-password">
+<a href="#" id="forgot-password"><span>Wachtwoord vergeten?</span></a>
+</div>
+</div>
+
+<div id="login-form-submit">
+<input type="submit" value="Log in" class="login-top-button" id="login-submit-button"/>
+<a href="#" tabindex="5" id="login-submit-new-button"><span>Log in</span></a>
+</div>
+
+</div>
+<div style="margin-left: -10px; margin-top: 25px;">
+<div id="sulake-logo"><a href="http://www.sulake.com"></a></div>
+</div>
+
+<script type="text/javascript">
+HabboView.add(function() {
+	LandingPage.init();
+	if (!LandingPage.focusForced) {
+		LandingPage.fieldFocus('login-username');
+	}
+});
+</script>
+</div></form></div>
+
+<div id="fp-container">
+<div id="content">
+<div id="column1" class="column">			     		
+<div class="habblet-container">
+
+<div style="width: 890px; margin: 0 auto">
+<div id="tagline">Chat, maak nieuwe vrienden, doe mee en val op!</div>
+</div>
+
+<div id="frontpage-image-container">
+<div id="join-now-button-container">
+<div id="join-now-button-wrapper">
+<div class="join-now-alternative">
+<a href="{url}/quickregister/start" class="newusers" id="newusers" onclick="startRegistration(this); return false;"><b>Nieuw hier?</b> 
+<span style="color: #8f8f8f;">Klik op de grote groene button.</span></a>
+</div>
+<div class="join-now-button">
+<a class="join-now-link" id="register-link" href="{url}/quickregister/start" onclick="startRegistration(this); return false;"> 
+<span class="join-now-text-big">Meld je</span>
+<span class="join-now-text-small">GRATIS aan!</span>
+</a>
+<span class="close"></span>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+function startRegistration(elem) {
+    targetUrl = elem.href;
+    if (typeof targetUrl == "undefined") {
+		targetUrl = "{url}/quickregister/start";
+    }
+	
+	window.location.href = targetUrl;
+}
+</script>
+
+<div id="people-inside">
+<b><span><span class="stats-fig">{online}</span> spelers binnen</span></b><i></i>
+</div>
+
+<a href="{url}/quickregister/start" id="frontpage-image" style="background-image: url('{url}/web-gallery/v2/images/frontpage/landing_generic_1203xx_1.png')" onclick="startRegistration(this); return false;"></a>
+</div>
+</div>
+<script type="text/javascript">if (!$(document.body).hasClassName('process-template')) { Rounder.init(); }</script>			 
+
+</div>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+Pngfix.doPngImageFix();
+</script>
+<![endif]-->
+<div id="footer" class="new_and_improved">
+	<p class="footer-links"><a href="{url}">Homepagina</a> | <a href="{url}/papers/termsAndConditions">Algemene voorwaarden</a> | <a href="{url}/papers/privacy">Privacyverklaring</a></p>
+    <div id="age-recommendation"></div>
+	<p class="copyright">{copyright}</p>
+
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+if (typeof HabboView != "undefined") {
+	HabboView.run();
+}
+</script>
+
+</body>
+</html>
